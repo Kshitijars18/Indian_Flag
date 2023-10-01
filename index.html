@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flag Project</title>
+  <style>
+    /* Write your CSS Code here */
+    .flag {
+      top: 20px;
+      width: 900px;
+      height: 600px;
+      background-color: #CE1126;
+      position: relative;
+    }
+
+    .flag>div {
+      top: 150px;
+      background-color: rgb(2, 2, 58);
+      height: 300px;
+      width: 900px;
+      position: absolute;
+    }
+
+    .flag>p {
+      top: 30px;
+      text-align: center;
+      font-size: 70px;
+      margin: 0;
+      color: white;
+      position: absolute;
+      left: 314px;
+    }
+
+    .flag>div>div {
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      background-color: white;
+      position: absolute;
+      color: black;
+      top: 50px;
+      left: 350px;
+    }
+
+    p {
+      font-size: 5rem;
+      color: white;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+
+    .flag>div div p {
+      color: black;
+    }
+
+    .Indian_flag {
+      background-color: white;
+      border: 1px solid black;
+      height: 600px;
+      width: 900px;
+      position: relative;
+      bottom: 10px;
+      top: 10px;
+    }
+
+    .Indian_flag>.saffron {
+      position: absolute;
+      background-color: #F4C430;
+      width: 900px;
+      height: 200px;
+    }
+
+    .Indian_flag>.chakra {
+      position: absolute;
+      background-color: rgb(6, 36, 62);
+      border-radius: 50%;
+      /* border-color:rgb(6, 36, 62) ; */
+      top: 210px;
+      right: 350px;
+      width: 180px;
+      height: 180px;
+    }
+
+    .Indian_flag>.green {
+      position: absolute;
+      background-color: green;
+      top: 400px;
+      width: 900px;
+      height: 200px;
+    }
+
+    /* .chakra>.spokes {
+      width: 8px;
+      height: 180px;
+      background-color: rgb(254, 254, 254);
+      position: absolute;
+      right: 85px;
+      border-radius: 100% / 80%;
+    } */
+    .chakra>.circle {
+      width: 170px;
+      height: 170px;
+      background-color: white;
+      position: absolute;
+      right: 5px;
+      border-radius: 50%;
+      top: 5px;
+    }
+
+    .circle>.semi_circle1 {
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      transform: translate(-50%, -50%) rotate(0deg);
+      height: 9px;
+      width: 9px;
+      border-radius: 150px 0px 0px 150px;
+      background-color: rgb(6, 36, 62);
+    }
+
+    .circle>.semi_circle2 {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(270deg);
+      height: 9px;
+      width: 9px;
+      border-radius: 150px 0px 0px 150px;
+      background-color: rgb(6, 36, 62);
+    }
+
+    .circle>.semi_circle3 {
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%) rotate(180deg);
+      height: 9px;
+      width: 9px;
+      border-radius: 150px 0px 0px 150px;
+      background-color: rgb(6, 36, 62);
+    }
+
+    .circle>.semi_circle4 {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(90deg);
+      height: 9px;
+      width: 9px;
+      border-radius: 150px 0px 0px 150px;
+      background-color: rgb(6, 36, 62);
+    }
+
+    .circle>.semi_circle5 {
+      position: absolute;
+      top: 85.36%;
+      left: 14.64%;
+      transform: translate(-50%, -50%) rotate(135deg);
+      height: 9px;
+      width: 9px;
+      border-radius: 150px 0px 0px 150px;
+      background-color: rgb(6, 36, 62);
+    }
+
+    .circle>.semi_circle6 {
+      position: absolute;
+      top: 14.64%;
+      left: 14.64%;
+      transform: translate(-50%, -50%) rotate(225deg);
+      height: 9px;
+      width: 9px;
+      border-radius: 150px 0px 0px 150px;
+      background-color: rgb(6, 36, 62);
+    }
+
+    .circle>.semi_circle7 {
+      position: absolute;
+      top: 14.64%;
+      left: 85.36%;
+      transform: translate(-50%, -50%) rotate(315deg);
+      height: 9px;
+      width: 9px;
+      border-radius: 150px 0px 0px 150px;
+      background-color: rgb(6, 36, 62);
+    }
+
+    .circle>.semi_circle8 {
+      position: absolute;
+      top: 85.36%;
+      left: 85.36%;
+      transform: translate(-50%, -50%) rotate(45deg);
+      height: 9px;
+      width: 9px;
+      border-radius: 150px 0px 0px 150px;
+      background-color: rgb(6, 36, 62);
+    }
+
+    .circle>.semi_circle9 {
+      position: absolute;
+      top: 75.133%;
+      left: 93.38%;
+      transform: translate(-50%, -50%) rotate(30deg);
+      height: 9px;
+      width: 9px;
+      border-radius: 150px 0px 0px 150px;
+      background-color: rgb(6, 36, 62);
+    }
+
+    .circle>.semi_circle10 {
+      position: absolute;
+      top: 93.38%;
+      left: 75.133%;
+      transform: translate(-50%, -50%) rotate(60deg);
+      height: 9px;
+      width: 9px;
+      border-radius: 150px 0px 0px 150px;
+      background-color: rgb(6, 36, 62)
+    }
+
+    .circle>.semi_circle11 {
+      position: absolute;
+      top: 93.38%;
+      left: 24.867%;
+      transform: translate(-50%, -50%) rotate(120deg);
+      height: 9px;
+      width: 9px;
+      border-radius: 150px 0px 0px 150px;
+      background-color: rgb(6, 36, 62)
+    }
+
+    .circle>.semi_circle12 {
+      position: absolute;
+      top: 6.62%;
+      left: 24.867%;
+      transform: translate(-50%, -50%) rotate(240deg);
+      height: 9px;
+      width: 9px;
+      border-radius: 150px 0px 0px 150px;
+      background-color: rgb(6, 36, 62)
+    }
+
+    .circle>.semi_circle13 {
+      position: absolute;
+      top: 6.62%;
+      left: 75.133%;
+      transform: translate(-50%, -50%) rotate(300deg);
+      height: 9px;
+      width: 9px;
+      border-radius: 150px 0px 0px 150px;
+      background-color: rgb(6, 36, 62)
+    }
+
+    .circle>.semi_circle14 {
+      position: absolute;
+      top: 63.133%;
+      left: 98.5%;
+      transform: translate(-50%, -50%) rotate(15deg);
+      height: 9px;
+      width: 9px;
+      border-radius: 150px 0px 0px 150px;
+      background-color: rgb(6, 36, 62);
+    }
+
+    .circle>.semi_circle15 {
+      position: absolute;
+      top: 63.133%;
+      left: 1.5%;
+      transform: translate(-50%, -50%) rotate(165deg);
+      height: 9px;
+      width: 9px;
+      border-radius: 150px 0px 0px 150px;
+      background-color: rgb(6, 36, 62);
+    }
+
+    .circle>.semi_circle16 {
+      position: absolute;
+      top: 14.64%;
+      left: 14.64%;
+      transform: translate(-50%, -50%) rotate(225deg);
+      height: 9px;
+      width: 9px;
+      border-radius: 150px 0px 0px 150px;
+      background-color: rgb(6, 36, 62);
+    }
+
+    .circle>.semi_circle17 {
+      position: absolute;
+      top: 75.133%;
+      left: 6.62%;
+      transform: translate(-50%, -50%) rotate(150deg);
+      height: 9px;
+      width: 9px;
+      border-radius: 150px 0px 0px 150px;
+      background-color: rgb(6, 36, 62);
+    }
+
+    .circle>.semi_circle18 {
+      position: absolute;
+      top: 98.133%;
+      left: 63.62%;
+      transform: translate(-50%, -50%) rotate(75deg);
+      height: 9px;
+      width: 9px;
+      border-radius: 150px 0px 0px 150px;
+      background-color: rgb(6, 36, 62);
+    }
+
+    .circle>.semi_circle19 {
+      position: absolute;
+      top: 98.49%;
+      left: 37.62%;
+      transform: translate(-50%, -50%) rotate(105deg);
+      height: 9px;
+      width: 9px;
+      border-radius: 150px 0px 0px 150px;
+      background-color: rgb(6, 36, 62);
+    }
+
+    .circle>.semi_circle20 {
+      position: absolute;
+      top: 98.49%;
+      left: 37.62%;
+      transform: translate(-50%, -50%) rotate(105deg);
+      height: 9px;
+      width: 9px;
+      border-radius: 150px 0px 0px 150px;
+      background-color: rgb(6, 36, 62);
+    }
+
+    .circle>.semi_circle21 {
+      position: absolute;
+      position: absolute;
+      top: 1.51%;
+      left: 37.62%;
+      transform: translate(-50%, -50%) rotate(255deg);
+      height: 9px;
+      width: 9px;
+      border-radius: 150px 0px 0px 150px;
+      background-color: rgb(6, 36, 62);
+    }
+
+    .circle>.semi_circle22 {
+      position: absolute;
+      top: 1.51%;
+      left: 62.38%;
+      transform: translate(-50%, -50%) rotate(285deg);
+      height: 9px;
+      width: 9px;
+      border-radius: 150px 0px 0px 150px;
+      background-color: rgb(6, 36, 62);
+    }
+
+    .circle>.semi_circle23 {
+      position: absolute;
+      top: 36.867%;
+      left: 98.5%;
+      transform: translate(-50%, -50%) rotate(345deg);
+      height: 9px;
+      width: 9px;
+      border-radius: 150px 0px 0px 150px;
+      background-color: rgb(6, 36, 62);
+    }
+
+    .circle>.semi_circle24 {
+      position: absolute;
+      top: 24.867%;
+      left: 6.62%;
+      transform: translate(-50%, -50%) rotate(210deg);
+      height: 9px;
+      width: 9px;
+      border-radius: 150px 0px 0px 150px;
+      background-color: rgb(6, 36, 62);
+    }
+
+    .circle>.semi_circle25 {
+      position: absolute;
+      top: 24.867%;
+      left: 93.38%;
+      transform: translate(-50%, -50%) rotate(330deg);
+      height: 9px;
+      width: 9px;
+      border-radius: 150px 0px 0px 150px;
+      background-color: rgb(6, 36, 62)
+    }
+
+    .circle>.semi_circle26 {
+      position: absolute;
+      top: 36.867%;
+      left: 1.5%;
+      transform: translate(-50%, -50%) rotate(195deg);
+      height: 9px;
+      width: 9px;
+      border-radius: 150px 0px 0px 150px;
+      background-color: rgb(6, 36, 62);
+    }
+
+    .center_circle {
+      width: 25px;
+      height: 25px;
+      background-color: rgb(6, 36, 62);
+      position: absolute;
+      right: 72.5px;
+      border-radius: 50%;
+      top: 72.5px;
+      left: 72.5px;
+    }
+
+    .circle>.spoke_1 {
+      height: 73.7px;
+      width: 6px;
+      background-color: rgb(6, 36, 62);
+      right: 76px;
+      position: absolute;
+      border-radius: 62%;
+      transform: rotate(8deg);
+
+    }
+
+    .circle>.spoke_2 {
+      height: 73.7px;
+      width: 6px;
+      background-color: rgb(6, 36, 62);
+      right: 64px;
+      position: absolute;
+      border-radius: 62%;
+      transform: rotate(23deg);
+      top: 3px;
+    }
+
+    .circle>.spoke_3 {
+      height: 73.7px;
+      width: 6px;
+      background-color: rgb(6, 36, 62);
+      right: 52px;
+      position: absolute;
+      border-radius: 62%;
+      transform: rotate(39deg);
+      top: 10px;
+    }
+
+    .circle>.spoke_4 {
+      height: 73.7px;
+      width: 6px;
+      background-color: rgb(6, 36, 62);
+      right: 44px;
+      position: absolute;
+      border-radius: 62%;
+      transform: rotate(52deg);
+      top: 18px;
+
+    }
+
+    .circle>.spoke_5 {
+      height: 73.7px;
+      width: 6px;
+      background-color: rgb(6, 36, 62);
+      right: 37px;
+      position: absolute;
+      border-radius: 62%;
+      transform: rotate(68deg);
+      top: 30px;
+    }
+
+    .circle>.spoke_6 {
+      height: 73.7px;
+      width: 6px;
+      background-color: rgb(6, 36, 62);
+      right: 34px;
+      position: absolute;
+      border-radius: 62%;
+      transform: rotate(83deg);
+      top: 42px;
+
+    }
+
+    .circle>.spoke_7 {
+      height: 73.7px;
+      width: 6px;
+      background-color: rgb(6, 36, 62);
+      right: 34px;
+      position: absolute;
+      border-radius: 62%;
+      transform: rotate(98deg);
+      top: 55px;
+    }
+
+    .circle>.spoke_8 {
+      height: 73.7px;
+      width: 6px;
+      background-color: rgb(6, 36, 62);
+      right: 37px;
+      position: absolute;
+      border-radius: 62%;
+      transform: rotate(113deg);
+      top: 68px;
+    }
+
+    .circle>.spoke_9 {
+      height: 75.7px;
+      width: 6px;
+      background-color: rgb(6, 36, 62);
+      right: 52px;
+      position: absolute;
+      border-radius: 62%;
+      transform: rotate(143deg);
+      top: 87px;
+    }
+
+    .circle>.spoke_10 {
+      height: 73.7px;
+      width: 6px;
+      background-color: rgb(6, 36, 62);
+      right: 43px;
+      position: absolute;
+      border-radius: 62%;
+      transform: rotate(127deg);
+      top: 78px;
+    }
+
+    .circle>.spoke_11 {
+      height: 75.7px;
+      width: 6px;
+      background-color: rgb(6, 36, 62);
+      right: 62px;
+      position: absolute;
+      border-radius: 62%;
+      transform: rotate(156deg);
+      top: 93px;
+    }
+
+    .circle>.spoke_12 {
+      height: 75.7px;
+    width: 6px;
+    background-color: rgb(6, 36, 62);
+    right: 75px;
+    position: absolute;
+    border-radius: 62%;
+    transform: rotate(172deg);
+    top: 96px;
+    }
+    .circle>.spoke_13 {
+      height: 75.7px;
+    width: 6px;
+    background-color: rgb(6, 36, 62);
+    right: 88px;
+    position: absolute;
+    border-radius: 62%;
+    transform: rotate(186deg);
+    top: 96px;
+    }
+    .circle>.spoke_14 {
+      height: 75.7px;
+    width: 6px;
+    background-color: rgb(6, 36, 62);
+    right: 101px;
+    position: absolute;
+    border-radius: 62%;
+    transform: rotate(202deg);
+    top: 93px;
+    }
+    .circle>.spoke_15 {
+      height: 75.7px;
+    width: 6px;
+    background-color: rgb(6, 36, 62);
+    right: 112px;
+    position: absolute;
+    border-radius: 62%;
+    transform: rotate(217deg);
+    top: 86px;
+
+    }
+    .circle>.spoke_16 {
+      height: 75.7px;
+    width: 6px;
+    background-color: rgb(6, 36, 62);
+    right: 121px;
+    position: absolute;
+    border-radius: 62%;
+    transform: rotate(231deg);
+    top: 77px;
+    }
+    .circle>.spoke_17 {
+      height: 75.7px;
+    width: 6px;
+    background-color: rgb(6, 36, 62);
+    right: 127px;
+    position: absolute;
+    border-radius: 62%;
+    transform: rotate(246deg);
+    top: 65px;
+    }
+    .circle>.spoke_18 {
+      height: 75.7px;
+    width: 6px;
+    background-color: rgb(6, 36, 62);
+    right: 131px;
+    position: absolute;
+    border-radius: 62%;
+    transform: rotate(261deg);
+    top: 53px;
+    }
+    .circle>.spoke_19 {
+      height: 75.7px;
+    width: 6px;
+    background-color: rgb(6, 36, 62);
+    right: 130px;
+    position: absolute;
+    border-radius: 62%;
+    transform: rotate(276deg);
+    top: 40px;
+
+    }
+    .circle>.spoke_20 {
+      height: 75.7px;
+    width: 6px;
+    background-color: rgb(6, 36, 62);
+    right: 128px;
+    position: absolute;
+    border-radius: 62%;
+    transform: rotate(291deg);
+    top: 27px;
+    }
+
+    .circle>.spoke_21 {
+         height: 75.7px;
+    width: 6px;
+    background-color: rgb(6, 36, 62);
+    right: 121px;
+    position: absolute;
+    border-radius: 62%;
+    transform: rotate(307deg);
+    top: 16px;
+    }
+    .circle>.spoke_22 {
+      height: 75.7px;
+    width: 6px;
+    background-color: rgb(6, 36, 62);
+    right: 112px;
+    position: absolute;
+    border-radius: 62%;
+    transform: rotate(323deg);
+    top: 7px;
+    }
+    .circle>.spoke_23 {
+      height: 75.7px;
+    width: 6px;
+    background-color: rgb(6, 36, 62);
+    right: 100px;
+    position: absolute;
+    border-radius: 62%;
+    transform: rotate(338deg);
+    top: 2px;
+    }
+    .circle>.spoke_24 {
+      height: 75.7px;
+    width: 6px;
+    background-color: rgb(6, 36, 62);
+    right: 88px;
+    position: absolute;
+    border-radius: 62%;
+    transform: rotate(174deg);
+    top: -2px;
+    }
+
+
+  </style>
+</head>
+
+<!-- 
+  IMPORTANT! Do not change any HTML
+Don't add any classes/ids/elements 
+Use what you know about combining selectors 
+and CSS specificity instead.
+Hint 1: The flag is 900px by 600px and the circle is 200px by 200px.
+Hint 2: You can use CSS inspection to get the colors from
+https://appbrewery.github.io/flag-of-laos/
+-->
+
+<body>
+  <div class="Indian_flag">
+    <div class="saffron"></div>
+    <div class="chakra">
+      <div class="circle">
+        <div class="center_circle"></div>
+        <div class="semi_circle1"></div>
+        <div class="semi_circle2"></div>
+        <div class="semi_circle3"></div>
+        <div class="semi_circle4"></div>
+        <div class="semi_circle5"></div>
+        <div class="semi_circle6"></div>
+        <div class="semi_circle7"></div>
+        <div class="semi_circle8"></div>
+        <div class="semi_circle9"></div>
+        <div class="semi_circle10"></div>
+        <div class="semi_circle11"></div>
+        <div class="semi_circle12"></div>
+        <div class="semi_circle13"></div>
+        <div class="semi_circle14"></div>
+        <div class="semi_circle15"></div>
+        <div class="semi_circle16"></div>
+        <div class="semi_circle17"></div>
+        <div class="semi_circle18"></div>
+        <div class="semi_circle19"></div>
+        <div class="semi_circle20"></div>
+        <div class="semi_circle21"></div>
+        <div class="semi_circle22"></div>
+        <div class="semi_circle23"></div>
+        <div class="semi_circle24"></div>
+        <div class="semi_circle25"></div>
+        <div class="semi_circle26"></div>
+        <div class="spoke_1"></div>
+        <div class="spoke_2"></div>
+        <div class="spoke_3"></div>
+        <div class="spoke_4"></div>
+        <div class="spoke_5"></div>
+        <div class="spoke_6"></div>
+        <div class="spoke_7"></div>
+        <div class="spoke_8"></div>
+        <div class="spoke_9"></div>
+        <div class="spoke_10"></div>
+        <div class="spoke_11"></div>
+        <div class="spoke_12"></div>
+        <div class="spoke_13"></div>
+        <div class="spoke_14"></div>
+        <div class="spoke_15"></div>
+        <div class="spoke_16"></div>
+        <div class="spoke_17"></div>
+        <div class="spoke_18"></div>
+        <div class="spoke_19"></div>
+        <div class="spoke_20"></div>
+        <div class="spoke_21"></div>
+        <div class="spoke_22"></div>
+        <div class="spoke_23"></div>
+        <div class="spoke_24"></div>
+
+      </div>
+
+      <div class="spokes"></div>
+    </div>
+    <div class="green"></div>
+  </div>
+
+  <div class="flag">
+    <p>The Flag</p>
+    <div>
+      <div>
+        <p>of Laos</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
